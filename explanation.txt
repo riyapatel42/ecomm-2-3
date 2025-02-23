@@ -1,0 +1,37 @@
+in terminal:
+npm init
+entry point:backend/server.js
+--->ecomm/backend
+npm i express mongoose dotenv
+npm i nodemon
+npm install nodemailer
+npm run dev
+
+
+---->ecomm/frontend
+npx create-react-app .
+npm start
+npm i axios react-helmet react-redux redux redux-thunk redux-devtools-extension react-router-dom overlay-navbar --force
+npm i react-icons --force
+npm i webfontloader --force
+npm i react-router-dom --force
+npm i react-rating-stars-component --force
+npm install @mui/material @emotion/react @emotion/styled --force
+npm install @reduxjs/toolkit react-redux --force
+npm install react-alert react-alert-template-basic --force
+npm install react-material-ui-carousel --save -force
+npm install @material-ui/core --force
+npm install @material-ui/icons --force
+npm install react-js-pagination --force
+
+npm uninstall @material-ui/core --force
+npm install @mui/material --force
+
+npm i react-js-pagination --force
+npm install @stripe/react-stripe-js @stripe/stripe-js --force
+npm i chart.js react-chartjs-2 --force
+
+--ecommM
+ npm i express-fileupload cloudinary --force
+ npm install react-alert react-alert-template-basic --force
+npm i stripe --force
