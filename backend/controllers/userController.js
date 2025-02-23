@@ -8,7 +8,7 @@ const crypto = require("crypto");
 const cloudinary = require("cloudinary");
 const { error } = require("console");
 
-// Register a User
+// Register a User and login user
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     if (!req.body.avatar || typeof req.body.avatar !== "string") {
         return next(new ErrorHander("Invalid avatar format", 400));
