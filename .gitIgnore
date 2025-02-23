@@ -3,14 +3,12 @@
 /node_modules
 /frontend/node_modules
 
-.env
 
 
 # production
 
 
 # misc
-/backend/config/config.env
 
 
 
