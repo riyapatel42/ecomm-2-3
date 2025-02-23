@@ -1,0 +1,96 @@
+/* Navbar Base Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmax 2vmax;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo Styling */
+.logo-container img {
+  width: 20vmax;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Links (Desktop) */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.3vmax;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(35, 35, 35, 0.8);
+  font-size: 1.3vmax;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #eb4034;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  gap: 1vmax;
+}
+
+.icon {
+  color: rgba(35, 35, 35, 0.8);
+  font-size: 1.5vmax;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #eb4034;
+}
+
+/* Burger Menu (Hidden in Desktop) */
+.burger-menu {
+  display: none;
+  font-size: 2vmax;
+  color: rgba(35, 35, 35, 0.8);
+  cursor: pointer;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+
+  /* Hide Normal Nav Links */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    border-radius: 10px;
+    padding: 1vmax;
+    text-align: center;
+  }
+
+  /* Show When Menu Open */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 1vmax 0;
+    font-size: 1.5vmax;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
